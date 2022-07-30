@@ -16,7 +16,7 @@
 }
 
 .headingLink {
-  color: rgb(var(--rgbTextLight));
+  color: var(--colorTextLight);
   position: absolute;
   top: 0.6em;
   transform: translate(-100%, -50%);
