@@ -18,8 +18,6 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
-
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
@@ -75,8 +73,9 @@ export const Home = () => {
       <Intro
         id="intro"
         sectionRef={intro}
-        disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
+        heading="We transform our startup ideas into market-ready entities"
+        description="Since 2017, we have been conceptualizing, developing, and directing revolutionary businesses. We dare to attempt what hasn’t been attempted before, embrace the unknown, and have a great time doing so."
       />
       <ProjectSummary
         id="project-1"

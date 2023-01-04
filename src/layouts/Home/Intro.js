@@ -18,25 +18,20 @@ const DisplacementSphere = dynamic(() =>
   import('layouts/Home/DisplacementSphere').then(mod => mod.DisplacementSphere)
 );
 
-export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...rest }) {
+export function Intro({
+  id,
+  sectionRef,
+  disciplines,
+  scrollIndicatorHidden,
+  heading,
+  description,
+  ...rest
+}) {
   const theme = useTheme();
   const [disciplineIndex, setDisciplineIndex] = useState(0);
   const prevTheme = usePrevious(theme);
-  const introLabel = [disciplines.slice(0, -1).join(', '), disciplines.slice(-1)[0]].join(
-    ', and '
-  );
-  const currentDiscipline = disciplines.find((item, index) => index === disciplineIndex);
   const titleId = `${id}-title`;
   const scrollToHash = useScrollToHash();
-
-  useInterval(
-    () => {
-      const index = (disciplineIndex + 1) % disciplines.length;
-      setDisciplineIndex(index);
-    },
-    5000,
-    theme.themeId
-  );
 
   useEffect(() => {
     if (prevTheme && prevTheme.themeId !== theme.themeId) {
@@ -64,48 +59,21 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
           <Fragment>
             <DisplacementSphere />
             <header className={styles.text}>
-              <h1 className={styles.name} data-visible={visible} id={titleId}>
-                <DecoderText text="Alexandre Andre" delay={300} />
-              </h1>
               <Heading level={0} as="h2" className={styles.title}>
-                <VisuallyHidden className={styles.label}>
-                  {`Designer + ${introLabel}`}
-                </VisuallyHidden>
                 <span aria-hidden className={styles.row}>
                   <span
                     className={styles.word}
                     data-status={status}
                     style={cssProps({ delay: tokens.base.durationXS })}
                   >
-                    Designer
+                    Ylabs
                   </span>
                   <span className={styles.line} data-status={status} />
                 </span>
-                <div className={styles.row} component="span">
-                  <AnimatePresence>
-                    {disciplines.map(item => (
-                      <Transition
-                        unmount
-                        in={item === currentDiscipline}
-                        timeout={{ enter: 3000, exit: 2000 }}
-                        key={item}
-                      >
-                        {(visible, status) => (
-                          <span
-                            aria-hidden
-                            className={styles.word}
-                            data-plus={true}
-                            data-status={status}
-                            style={cssProps({ delay: tokens.base.durationL })}
-                          >
-                            {item}
-                          </span>
-                        )}
-                      </Transition>
-                    ))}
-                  </AnimatePresence>
-                </div>
               </Heading>
+              <div className={styles.description} data-visible={visible} id={titleId}>
+                <DecoderText text={heading} delay={300} />
+              </div>
             </header>
             <RouterLink href="/#project-1">
               <a
@@ -115,17 +83,6 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 onClick={handleScrollClick}
               >
                 <VisuallyHidden>Scroll to projects</VisuallyHidden>
-              </a>
-            </RouterLink>
-            <RouterLink href="/#project-1">
-              <a
-                className={styles.mobileScrollIndicator}
-                data-status={status}
-                data-hidden={scrollIndicatorHidden}
-                onClick={handleScrollClick}
-              >
-                <VisuallyHidden>Scroll to projects</VisuallyHidden>
-                <ArrowDown aria-hidden />
               </a>
             </RouterLink>
           </Fragment>
