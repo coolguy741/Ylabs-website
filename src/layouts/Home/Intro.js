@@ -59,7 +59,7 @@ export function Intro({
           <Fragment>
             <DisplacementSphere />
             <header className={styles.text}>
-              <Heading level={0} as="h2" className={styles.title}>
+              <Heading level={1} as="h2" className={styles.title}>
                 <span aria-hidden className={styles.row}>
                   <span
                     className={styles.word}
