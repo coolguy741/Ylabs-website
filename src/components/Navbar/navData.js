@@ -8,10 +8,6 @@ export const navLinks = [
     pathname: '/#details',
   },
   {
-    label: 'Articles',
-    pathname: '/articles',
-  },
-  {
     label: 'Contact',
     pathname: '/contact',
   },
@@ -19,18 +15,13 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/company/ylabs-gmbh/',
+    icon: 'linkedin',
   },
   {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
-  },
-  {
-    label: 'Github',
-    url: 'https://github.com/HamishMW',
-    icon: 'github',
+    label: 'Email',
+    url: 'mailto:Hello@ylabs.swiss',
+    icon: 'email',
   },
 ];
