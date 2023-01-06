@@ -82,9 +82,9 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
+        title="Arufabudo"
+        description="Manufacturer and Seller of premium boxing gear."
+        buttonText="Details"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
@@ -103,9 +103,9 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
+        title="PlanifAi"
+        description="AI-powered platform that creates comprehensive business plans in a matter of minutes"
+        buttonText="Details"
         buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'phone',
@@ -127,9 +127,9 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
+        title="RapidCoder"
+        description="E-learning platform that teaches novice and intermediate programmers and developers to become experts in their field"
+        buttonText="Details"
         buttonLink="/projects/slice"
         model={{
           type: 'laptop',
