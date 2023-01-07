@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "homepage": "https://Ylabs.swiss",
-  "description": "Ylabs.swiss Website",
+  "description": "Ylabs Website",
   "author": "Alexandre Andre <forest915820@gmail.com>",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
