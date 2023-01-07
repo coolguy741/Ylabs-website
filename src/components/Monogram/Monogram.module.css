@@ -6,8 +6,8 @@
 .highlight {
   fill: rgb(var(--rgbAccent));
   opacity: 0;
-  transform: scale3d(1, 0, 1);
-  transform-origin: top;
+  transform: scaleX(0);
+  transform-origin: right;
   transition: opacity 0.1s ease var(--durationM);
 
   @media (--mediaUseMotion) {
@@ -17,8 +17,8 @@
 
   @nest :is(a:focus, a:hover, .monogram:hover) & {
     opacity: 1;
-    transform: scale3d(1, 1, 1);
-    transform-origin: bottom;
+    transform: scaleX(1);
+    transform-origin: left;
     transition: opacity 0.1s ease;
 
     @media (--mediaUseMotion) {
