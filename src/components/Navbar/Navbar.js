@@ -167,7 +167,6 @@ export const Navbar = () => {
             </RouterLink>
           ))}
         </div>
-        <NavbarIcons desktop />
       </nav>
       <Transition unmount in={menuOpen} timeout={msToNum(tokens.base.durationL)}>
         {visible => (
@@ -189,7 +188,6 @@ export const Navbar = () => {
                 </a>
               </RouterLink>
             ))}
-            <NavbarIcons />
             <ThemeToggle isMobile />
           </nav>
         )}
