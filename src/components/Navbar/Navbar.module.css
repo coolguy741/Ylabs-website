@@ -173,7 +173,7 @@
 }
 
 .mobileNavLink {
-  width: 100%;
+  width: 250px;
   font-size: var(--headerNavFontSize);
   text-align: center;
   text-decoration: none;
@@ -203,7 +203,7 @@
   &::after {
     content: '';
     position: absolute;
-    top: 50%;
+    bottom: 15px;
     right: var(--space3XL);
     left: var(--space3XL);
     height: 4px;
