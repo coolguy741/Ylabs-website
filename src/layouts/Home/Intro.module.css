@@ -34,8 +34,7 @@
 }
 
 .description {
-  display: flex;
-  font-size: calc((24 / 12) * 1rem);
+  font-size: calc((24 / 10) * 1rem);
   color: var(--colorTextBody);
   letter-spacing: 0.1em;
   margin-bottom: var(--space2XL);
@@ -46,12 +45,12 @@
   transition: opacity var(--durationL) var(--bezierFastoutSlowin) 0.2s;
 
   @media (--mediaLaptop) {
-    font-size: calc((22 / 12) * 1rem);
+    font-size: calc((22 / 10) * 1rem);
     margin-bottom: var(--spaceXL);
   }
 
   @media (--mediaTablet) {
-    font-size: calc((18 / 12) * 1rem);
+    font-size: calc((18 / 10) * 1rem);
   }
 
   @media (--mediaMobile) {

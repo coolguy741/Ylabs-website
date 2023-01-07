@@ -23,8 +23,8 @@ export function Intro({
   sectionRef,
   disciplines,
   scrollIndicatorHidden,
-  heading,
-  description,
+  description1,
+  description2,
   ...rest
 }) {
   const theme = useTheme();
@@ -59,20 +59,10 @@ export function Intro({
           <Fragment>
             <DisplacementSphere />
             <header className={styles.text}>
-              <Heading level={1} as="h2" className={styles.title}>
-                <span aria-hidden className={styles.row}>
-                  <span
-                    className={styles.word}
-                    data-status={status}
-                    style={cssProps({ delay: tokens.base.durationXS })}
-                  >
-                    Ylabs
-                  </span>
-                  <span className={styles.line} data-status={status} />
-                </span>
-              </Heading>
               <div className={styles.description} data-visible={visible} id={titleId}>
-                <DecoderText text={heading} delay={300} />
+                <DecoderText text={description1} delay={300} />
+                <br />
+                <DecoderText text={description2} delay={1200} />
               </div>
             </header>
             <RouterLink href="/#project-1">

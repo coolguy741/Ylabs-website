@@ -74,8 +74,8 @@ export const Home = () => {
         id="intro"
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
-        heading="We transform our startup ideas into market-ready entities"
-        description="Since 2017, we have been conceptualizing, developing, and directing revolutionary businesses. We dare to attempt what hasn’t been attempted before, embrace the unknown, and have a great time doing so."
+        description1="We transform our startup ideas into market-ready entities."
+        description2="Since 2017, we have been conceptualizing, developing, and directing revolutionary businesses. We dare to attempt what hasn’t been attempted before, embrace the unknown, and have a great time doing so."
       />
       <ProjectSummary
         id="project-1"
