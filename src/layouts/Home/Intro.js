@@ -65,16 +65,6 @@ export function Intro({
                 <DecoderText text={description2} delay={1200} />
               </div>
             </header>
-            <RouterLink href="/#project-1">
-              <a
-                className={styles.scrollIndicator}
-                data-status={status}
-                data-hidden={scrollIndicatorHidden}
-                onClick={handleScrollClick}
-              >
-                <VisuallyHidden>Scroll to projects</VisuallyHidden>
-              </a>
-            </RouterLink>
           </Fragment>
         )}
       </Transition>
