@@ -5,7 +5,7 @@
   position: fixed;
   z-index: var(--zIndex4);
   bottom: var(--inset);
-  right: var(--inset);
+  left: var(--inset);
   transform: translate3d(0, 0, 0);
 
   @media (--mediaMobile), (--mediaMobileLS) {
