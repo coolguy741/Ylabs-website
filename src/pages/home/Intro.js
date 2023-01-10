@@ -5,6 +5,7 @@ import { Transition } from 'components/Transition';
 import dynamic from 'next/dynamic';
 import { Fragment } from 'react';
 import styles from './Intro.module.css';
+import { HoldingButton } from './HoldingButton';
 
 const DisplacementSphere = dynamic(() =>
   import('pages/Home/DisplacementSphere').then(mod => mod.DisplacementSphere)
@@ -43,6 +44,9 @@ export function Intro({
                 <DecoderText text={description2} delay={1200} />
               </div>
             </header>
+            <div className={styles.holdingButton}>
+              <HoldingButton />
+            </div>
           </Fragment>
         )}
       </Transition>

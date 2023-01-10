@@ -317,41 +317,6 @@
   }
 }
 
-.mobileScrollIndicator {
-  position: fixed;
-  bottom: 0;
-  opacity: 0;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.8, 0.1, 0.27, 1);
-  transition-duration: var(--durationM);
-  padding: 20px;
-
-  @media (--mediaUseMotion) {
-    animation-name: introMobileScrollIndicator;
-    transition-property: opacity, transform;
-    transform: translate3d(0, 20px, 0);
-  }
-
-  &[data-status='entered'] {
-    opacity: 1;
-  }
-
-  &[data-hidden='true'] {
-    opacity: 0;
-    transform: none;
-  }
-
-  @media (--mediaNoTouch) {
-    display: none;
-  }
-
-  & svg {
-    stroke: rgb(var(--rgbText) / 0.5);
-  }
-
-  &:focus-visible {
-    opacity: 1;
-  }
+.holdingButton {
+  z-index: 20;
 }
