@@ -1,7 +1,5 @@
-import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
-import { Intro } from 'layouts/Home/Intro';
-import { useEffect, useRef, useState } from 'react';
+import { Intro } from 'pages/Home/Intro';
 import styles from './Home.module.css';
 
 export const Home = () => {
