@@ -1,11 +1,9 @@
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
-import { Intro } from 'pages/Home/Intro';
-import styles from './Home.module.css';
+import { Intro } from 'pages/projects/Intro';
+import styles from './Projects.module.css';
 
-export const Home = () => {
-  // useEffect(() => {}, []);
-
+export const Projects = () => {
   return (
     <div className={styles.home}>
       <Meta title="" description="Ylabs website" />
