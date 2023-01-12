@@ -4,35 +4,7 @@ import { Showcase } from './lib/Showcase';
 import { Slides } from './lib/Slides';
 import styles from './ImageSlider.module.css';
 
-const slidesData = [
-  {
-    image: '/images/1.jpg',
-    title: 'Segovia',
-    meta: 'Spain / Castile and León',
-  },
-  {
-    image: '/images/2.jpg',
-    title: 'Barcelona',
-    meta: 'Spain / Catalonia',
-  },
-  {
-    image: '/images/3.jpg',
-    title: 'Málaga',
-    meta: 'Spain / Andalusia',
-  },
-  {
-    image: '/images/4.jpg',
-    title: 'Pamplona',
-    meta: 'Spain / Navarre',
-  },
-  {
-    image: '/images/5.jpg',
-    title: 'Bilbao',
-    meta: 'Spain / Biscay',
-  },
-];
-
-export const ImageSlider = ({ data }) => {
+export const ImageSlider = ({ slidesData }) => {
   const ref = useRef();
 
   useEffect(() => {
