@@ -1,5 +1,5 @@
 import styles from '../ImageSlider.module.css';
-
+import Router from 'next/router';
 const createEleWithClass = (tag, className) => {
   const ele = document.createElement(tag);
   ele.className = className;
@@ -15,12 +15,15 @@ class Slides {
       const slide = createEleWithClass('div', styles.Slide);
       const title = createEleWithClass('h1', styles.SlideTitle);
       const meta = createEleWithClass('p', styles.SlideMeta);
-      const more = createEleWithClass('a', styles.SlideMore);
-      more.href = '#';
+      const more = createEleWithClass('button', styles.SlideMore);
       slide.classList.add(index !== 0 ? styles.Next : styles.ShowMeta);
       meta.innerHTML = entry.meta;
       title.innerHTML = entry.title;
       more.innerHTML = 'Read more';
+      more.addEventListener('click', function () {
+        Router.push(entry.path);
+      });
+      more.add;
       slide.appendChild(meta);
       slide.appendChild(title);
       slide.appendChild(more);
