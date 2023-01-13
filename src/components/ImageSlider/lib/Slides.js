@@ -23,7 +23,6 @@ class Slides {
       more.addEventListener('click', function () {
         Router.push(entry.path);
       });
-      more.add;
       slide.appendChild(meta);
       slide.appendChild(title);
       slide.appendChild(more);
