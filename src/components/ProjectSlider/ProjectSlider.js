@@ -2,9 +2,9 @@ import { useEffect, useRef } from 'react';
 import React from 'react';
 import { Showcase } from './lib/Showcase';
 import { Slides } from './lib/Slides';
-import styles from './ImageSlider.module.css';
+import styles from './ProjectSlider.module.css';
 
-export const ImageSlider = ({ slidesData }) => {
+export const ProjectSlider = ({ slidesData }) => {
   const ref = useRef();
 
   useEffect(() => {
@@ -41,5 +41,5 @@ export const ImageSlider = ({ slidesData }) => {
     console.log('Debug: useEffect');
   }, []);
 
-  return <div className={styles.ImageSlider} ref={ref} />;
+  return <div className={styles.ProjectSlider} ref={ref} />;
 };

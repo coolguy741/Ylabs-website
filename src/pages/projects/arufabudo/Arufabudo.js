@@ -1,5 +1,6 @@
 // import { Project } from 'components/Project';
 import styles from './Arufabudo.module.css';
+import { Project } from 'components/Project';
 
 const ArufabudoData = {
   headingImage: '/images/arufabudo/arufa_thumb_project.jpg',
@@ -52,5 +53,5 @@ const ArufabudoData = {
 };
 
 export const Arufabudo = () => {
-  return <div>Arufabudo</div>;
+  return <Project arufabudoData={ArufabudoData} />;
 };

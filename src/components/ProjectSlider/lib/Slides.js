@@ -1,4 +1,4 @@
-import styles from '../ImageSlider.module.css';
+import styles from '../ProjectSlider.module.css';
 import Router from 'next/router';
 const createEleWithClass = (tag, className) => {
   const ele = document.createElement(tag);
