@@ -1,0 +1,92 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 100px;
+  @media (--mediaMobile) {
+    padding: 10px 10px 66px;
+  }
+  background-color: white;
+  color: black;
+}
+.Main {
+  display: flex;
+  margin-bottom: 100px;
+
+  @media (--mediaTablet) {
+    margin-bottom: 144px;
+  }
+  @media (--mediaMobile) {
+    flex-direction: column-reverse;
+    margin-bottom: 66px;
+    gap: 50px;
+  }
+}
+
+.Main .Content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 50%;
+
+  @media (--mediaTablet) {
+    width: 70%;
+  }
+
+  @media (--mediaMobile) {
+    width: 100%;
+    gap: 50px;
+  }
+}
+
+.Main h1 {
+  @media (--mediaMobile) {
+    font-size: 2.5em;
+    line-height: 48px;
+  }
+}
+
+.Main .IconContainer {
+  width: 50%;
+  position: relative;
+
+  @media (--mediaTablet) {
+    width: 30%;
+  }
+
+  @media (--mediaMobile) {
+    width: 100%;
+    min-height: 51px;
+  }
+}
+
+.IconContainer img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 466px;
+  @media (--mediaTablet) {
+    width: 100%;
+  }
+  @media (--mediaMobile) {
+    width: 264px;
+    position: static;
+  }
+}
+
+.Cards {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+}
+
+.Cards .Card {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  min-width: 400px;
+  scroll-snap-align: start;
+
+  @media (--mediaMobile) {
+    min-width: 264px;
+  }
+}

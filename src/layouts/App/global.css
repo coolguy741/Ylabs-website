@@ -1,6 +1,6 @@
 @custom-media --mediaDesktop (max-width: 2080px);
 @custom-media --mediaLaptop (max-width: 1680px);
-@custom-media --mediaTablet (max-width: 1040px);
+@custom-media --mediaTablet (max-width: 1280px);
 @custom-media --mediaMobile (max-width: 696px);
 @custom-media --mediaMobileLS (max-height: 696px);
 @custom-media --mediaMobileS (max-width: 400px);
@@ -75,4 +75,60 @@ body {
     transform: scale3d(0, 1, 1);
     transform-origin: right;
   }
+}
+
+.deskTextRegular {
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 24px;
+  @media (--mediaMobile) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.deskTitleSmall {
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 48px;
+  @media (--mediaTablet) {
+    font-size: 2.1875em;
+    line-height: 42px;
+  }
+  @media (--mediaMobile) {
+    font-size: 1.875em;
+    line-height: 36px;
+  }
+}
+
+.deskTitleMedium {
+  font-weight: 400;
+  font-size: 3.75em;
+  line-height: 72px;
+  @media (--mediaTablet) {
+    font-size: 3.125em;
+    line-height: 60px;
+  }
+  @media (--mediaMobile) {
+    font-size: 1.875em;
+    line-height: 36px;
+  }
+}
+
+.forbidSelection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.horizontalScrollbar {
+  overflow-x: auto;
+  scroll-snap-type: both mandatory;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  scrollbar-width: none;
 }

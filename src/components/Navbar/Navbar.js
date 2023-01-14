@@ -188,11 +188,9 @@ export const Navbar = () => {
                 </a>
               </RouterLink>
             ))}
-            <ThemeToggle isMobile />
           </nav>
         )}
       </Transition>
-      {!isMobile && <ThemeToggle data-navbar-item />}
     </header>
   );
 };

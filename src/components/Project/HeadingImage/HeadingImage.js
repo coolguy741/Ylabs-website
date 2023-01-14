@@ -1,5 +1,6 @@
 import styles from './HeadingImage.module.css';
+import Image from 'next/image';
 
-export const HeadingImage = () => {
-  return <div>HeadingImage</div>;
+export const HeadingImage = ({ src }) => {
+  return <img src={src} alt="Arufabudo Picture" layout="fill" />;
 };

@@ -1,5 +1,3 @@
-import GothamBook from 'assets/fonts/gotham-book.woff2';
-import GothamMedium from 'assets/fonts/gotham-medium.woff2';
 import { fontStyles, tokenStyles } from 'components/ThemeProvider';
 import { Head, Html, Main, NextScript } from 'next/document';
 
@@ -11,8 +9,18 @@ export default function Document() {
 
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
 
-        <link rel="preload" href={GothamMedium} as="font" crossOrigin="true" />
-        <link rel="preload" href={GothamBook} as="font" crossOrigin="true" />
+        <link
+          rel="preload"
+          href="/fonts/gotham-medium.woff2"
+          as="font"
+          crossOrigin="true"
+        />
+        <link
+          rel="preload"
+          href="/fonts/gotham-book.woff2"
+          as="font"
+          crossOrigin="true"
+        />
         <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
         <style dangerouslySetInnerHTML={{ __html: tokenStyles }} />
       </Head>

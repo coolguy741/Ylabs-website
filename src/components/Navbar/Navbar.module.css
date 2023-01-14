@@ -12,7 +12,6 @@
   position: absolute;
   top: var(--spaceOuter);
   left: var(--spaceOuter);
-  bottom: var(--spaceOuter);
   z-index: var(--zIndex4);
   isolation: isolate;
 

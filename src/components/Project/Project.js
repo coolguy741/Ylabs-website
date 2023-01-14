@@ -7,13 +7,15 @@ import { LinkContainer } from './LinkContainer';
 import { Contacts } from './Contacts';
 
 export const Project = ({ arufabudoData }) => {
+  console.log('arufabudoData', arufabudoData);
   return (
     <div className={styles.Project}>
-      <HeadingImage src={arufabudoData.HeadingImage} />
+      <HeadingImage src={arufabudoData.headingImage} />
       <About
         icon={arufabudoData.about.icon}
         title={arufabudoData.about.title}
         description={arufabudoData.about.description}
+        cards={arufabudoData.about.cards}
       />
       <ImageSlider images={arufabudoData.images} />
       <MileStones milestones={arufabudoData.milestones} />
