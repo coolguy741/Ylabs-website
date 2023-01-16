@@ -17,7 +17,7 @@ body {
   font-family: var(--fontStack);
   font-weight: var(--fontWeightRegular);
   background-color: rgb(var(--rgbBackground));
-  transition: background var(--durationM) ease;
+  transition: var(--durationM) ease;
   color: var(--colorTextBody);
   width: 100vw;
   overflow-x: hidden;
@@ -131,4 +131,18 @@ body {
     width: 0;
   }
   scrollbar-width: none;
+}
+
+.deskTitleBig {
+  font-weight: 400;
+  font-size: 5em;
+  line-height: 96px;
+  @media (--mediaMobile) {
+    font-size: 2.5em;
+    line-height: 48px;
+  }
+}
+
+a {
+  color: inherit;
 }

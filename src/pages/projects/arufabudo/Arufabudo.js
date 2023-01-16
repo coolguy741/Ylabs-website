@@ -38,18 +38,30 @@ const ArufabudoData = {
   milestones: [
     {
       date: 'January 2022',
-      content: 'Project launch',
+      title: 'Project launch',
     },
     {
       date: 'July 2022',
-      content: 'Development of Boxing Glove',
+      title: 'Development of Boxing Glove',
     },
     {
       date: 'July 2022',
-      content: 'Design Collection-lineup',
+      title: 'Design Collection-lineup',
     },
   ],
-  url: '#',
+  services: [
+    {
+      title: 'Blockchain-infused boxing',
+      description:
+        'We are integrating blockchain technology into customizable patches that are able to be affixed on Arufabudo’s gloves, apparel, and accessories. Every patch will contain a unique ID that distinguishes it from other patches. As a result, all custom-made products are non-replicable.',
+    },
+    {
+      title: 'Fighting with purpose',
+      description:
+        'Living in a time where the state of our environment is critical, we are making a conscious effort to do our part in creating a sustainable future for all. For each purchase of Arufabudo gear, a tree will be planted. Additionally, we have managed to utilize fewer layers of leather in the production of our boxing gloves to not only improve performance but be more eco-friendly.',
+    },
+  ],
+  url: 'Website will soon be available.',
 };
 
 export const Arufabudo = () => {

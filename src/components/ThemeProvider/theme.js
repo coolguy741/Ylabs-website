@@ -108,7 +108,9 @@ const tokensMobileSmall = {
 const dark = {
   themeId: 'dark',
   rgbBackground: '17 17 17',
+  rgbBackgroundGray: '245 245 245',
   rgbBackgroundLight: '26 26 26',
+
   rgbPrimary: '0 229 255',
   rgbAccent: '0 229 255',
   rgbText: '255 255 255',
@@ -116,6 +118,9 @@ const dark = {
   colorTextTitle: 'rgb(var(--rgbText) / 1)',
   colorTextBody: 'rgb(var(--rgbText) / 0.8)',
   colorTextLight: 'rgb(var(--rgbText) / 0.6)',
+  colorTextAccent: 'rgb(175, 175, 175)',
+  colorTextDark: 'rgb(17, 19, 31)',
+  colorTextWhite: 'rgb(255, 255, 255)',
 };
 
 const light = {

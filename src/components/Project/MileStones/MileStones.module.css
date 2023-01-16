@@ -1,0 +1,50 @@
+.MileStones {
+  background-color: rgb(var(--rgbBackgroundGray));
+}
+
+.Main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @media (--mediaMobile) {
+    width: 100%;
+  }
+}
+
+.Title {
+  width: 50%;
+  @media (--mediaTablet) {
+    font-size: 3.125em;
+    line-height: 60px;
+  }
+  @media (--mediaMobile) {
+    font-size: 3.75em;
+    line-height: 72px;
+    width: 100%;
+  }
+}
+
+.Events {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  @media (--mediaTablet) {
+    width: 70%;
+    width: 100%;
+  }
+}
+
+.Event .Date {
+  color: var(--colorTextAccent);
+}
+
+.Container {
+  padding: 100px 10px;
+  display: flex;
+  justify-content: flex-end;
+  @media (--mediaMobile) {
+    padding: 50px 10px;
+  }
+}

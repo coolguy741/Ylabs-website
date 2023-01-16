@@ -2,5 +2,6 @@
   display: flex;
   flex-direction: column;
   font-family: 'NeueMontreal';
-
+  background-color: rgb(var(--rgbWhite));
+  color: var(--colorTextDark);
 }

@@ -1,0 +1,44 @@
+.Container {
+  background-color: rgb(var(--rgbBlack));
+  color: var(--colorTextWhite);
+  padding: 10px 10px 100px;
+  @media (--mediaMobile) {
+    padding: 10px 10px 50px;
+  }
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  gap: 102px;
+  @media (--mediaMobile) {
+    gap: 50px;
+  }
+}
+.Address {
+  max-width: 460px;
+}
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 900px;
+}
+.SocialMedias {
+  display: flex;
+  gap: 10px;
+}
+.Facebook {
+  background: url('/logo/facebook.png');
+  width: 100px;
+  height: 100px;
+}
+.Linkedin {
+  background: url('/logo/linkedin.png');
+  width: 100px;
+  height: 100px;
+}
+.Logo {
+  background: url('/logo/ylabs_cyber_security.svg');
+  width: 173px;
+  height: 104px;
+}
