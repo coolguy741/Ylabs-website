@@ -1,0 +1,40 @@
+.container {
+  padding: 100px 10px;
+  @media (--mediaTablet) {
+    padding: 10px 10px 100px;
+  }
+  @media (--mediaMobile) {
+    padding: 30px 10px 50px;
+  }
+}
+
+.Items {
+  display: flex;
+  gap: 10px;
+  @media (--mediaTablet) {
+    flex-direction: column;
+    gap: 100px;
+  }
+  @media (--mediaMobile) {
+    gap: 50px;
+  }
+}
+
+.Item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+  @media (--mediaTablet) {
+    width: 100%;
+  }
+}
+
+.Item h1 {
+  max-width: 50%;
+  @media (--mediaMobile) {
+    max-width: 100%;
+    font-size: 2.5em;
+    line-height: 48px;
+  }
+}
