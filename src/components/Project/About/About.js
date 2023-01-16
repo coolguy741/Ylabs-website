@@ -1,6 +1,6 @@
 import styles from './About.module.css';
 
-export const About = ({ title, description, icon, cards }) => {
+export const About = ({ title, description, logoUrl, cards }) => {
   return (
     <div className={styles.About}>
       <div className={styles.Main}>
@@ -13,7 +13,7 @@ export const About = ({ title, description, icon, cards }) => {
           </p>
         </div>
         <div className={styles.IconContainer}>
-          <img className={styles.Icon} src={icon} alt="Arufabudo Image" />
+          <img className={styles.Icon} src={logoUrl} alt="Arufabudo Image" />
         </div>
       </div>
       <div className={`${styles.Cards} horizontalScrollbar`}>

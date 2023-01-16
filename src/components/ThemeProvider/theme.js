@@ -4,6 +4,10 @@ import { pxToRem } from 'utils/style';
 const baseTokens = {
   rgbBlack: '0 0 0',
   rgbWhite: '255 255 255',
+  rgbGreen: '223 246 28',
+  rgbPurple: '151 135 249',
+  rgbRed: '224 11 23',
+  rgbDark: '0 0 0',
   bezierFastoutSlowin: 'cubic-bezier(0.4, 0.0, 0.2, 1)',
   durationXS: '200ms',
   durationS: '300ms',

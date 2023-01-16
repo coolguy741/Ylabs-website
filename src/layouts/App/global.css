@@ -146,3 +146,21 @@ body {
 a {
   color: inherit;
 }
+
+.navigationLinkComponentStyles {
+  position: relative;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease 0s;
+  z-index: 0;
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}

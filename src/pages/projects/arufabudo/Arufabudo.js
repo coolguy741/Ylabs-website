@@ -3,10 +3,13 @@ import styles from './Arufabudo.module.css';
 import { Project } from 'components/Project';
 
 const ArufabudoData = {
-  headingImage: '/images/arufabudo/arufa_thumb_project.jpg',
+  headerImage: {
+    src: '/images/arufabudo/arufa_thumb_project.jpg',
+    alt: 'arufa-gloves',
+  },
   about: {
-    icon: '/logo/logo-word-arufabudo.png',
     title: 'Arufabudo is a manufacturer and seller of premium boxing gear.',
+    logoUrl: '/logo/logo-word-arufabudo.png',
     description: [
       'Our product line will consist of goods including boxing gloves, clothing, and accessories. Arufabudo gear will be available in both, ready-made and custom-made designs. Arufabudo gear will be available in both, ready-made and custom-made designs.',
     ],
@@ -29,11 +32,26 @@ const ArufabudoData = {
     ],
   },
   images: [
-    'arufabudo_boxing_gloves.jpg',
-    'arufabudo_boxingbag.jpeg',
-    'arufabudo_instagram_teaser_2.jpeg',
-    'arufabudo_instagram_teaser.jpeg',
-    'arufabudo_stage_teaser.jpeg',
+    {
+      image: '../../../../assets/images/arufabudo/arufabudo_boxing_gloves.jpg',
+      thumbImage: '../../../../assets/images/arufabudo/arufabudo_boxing_gloves.jpg',
+    },
+    {
+      image: '../../../../assets/images/arufabudo/arufabudo_instagram_teaser.jpeg',
+      thumbImage: '../../../../assets/images/arufabudo/arufabudo_instagram_teaser.jpeg',
+    },
+    {
+      image: '../../../../assets/images/arufabudo/arufabudo_instagram_teaser_2.jpeg',
+      thumbImage: '../../../../assets/images/arufabudo/arufabudo_instagram_teaser_2.jpeg',
+    },
+    {
+      image: '../../../../assets/images/arufabudo/arufabudo_boxingbag.jpeg',
+      thumbImage: '../../../../assets/images/arufabudo/arufabudo_boxingbag.jpeg',
+    },
+    {
+      image: '../../../../assets/images/arufabudo/arufabudo_stage_teaser.jpeg',
+      thumbImage: '../../../../assets/images/arufabudo/arufabudo_stage_teaser.jpeg',
+    },
   ],
   milestones: [
     {
@@ -61,7 +79,23 @@ const ArufabudoData = {
         'Living in a time where the state of our environment is critical, we are making a conscious effort to do our part in creating a sustainable future for all. For each purchase of Arufabudo gear, a tree will be planted. Additionally, we have managed to utilize fewer layers of leather in the production of our boxing gloves to not only improve performance but be more eco-friendly.',
     },
   ],
-  url: 'Website will soon be available.',
+  website: 'Website will soon be available.',
+  projectLinks: [
+    {
+      linkName: 'Planifai',
+      linkText: 'Planifai. Comprehensive Business plan for 300$',
+      imageSrc: '/images/planify/tablet-phone.png',
+      imageAlt: 'tablet-phone.png',
+      logoSrc: 'url("/logo/planifai_mark.png")',
+    },
+    {
+      linkName: 'Rapidcoder',
+      linkText: 'Rapidcoder. Advance computer science courses',
+      imageSrc: '/images/rapidcoder/PCOnTable.png',
+      imageAlt: 'PCOnTable.png',
+      logoSrc: 'url("/logo/rapidcoder_mark.png")',
+    },
+  ],
 };
 
 export const Arufabudo = () => {

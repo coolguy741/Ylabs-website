@@ -1,0 +1,152 @@
+.Container {
+  padding: 0 10px 10px 10px;
+  display: flex;
+  gap: 10px;
+  width: calc(100% - 20px);
+  @media (--mediaMobile) {
+    flex-direction: column;
+  }
+}
+
+.Item {
+  width: 100%;
+  height: 50vw;
+  @media (--mediaMobile) {
+    height: 355px;
+  }
+}
+
+.Container .ArufabudoImage {
+  width: 100%;
+  @media (--mediaTablet) {
+    width: 120%;
+  }
+  @media (--mediaMobile) {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.Container .PlanifaiImage {
+  width: 110%;
+  @media (--mediaMobile) {
+    height: 110%;
+    width: auto;
+    top: 58%;
+  }
+}
+
+.Container .RapidcoderImage {
+  top: auto;
+  left: -5%;
+  width: 100%;
+  height: auto;
+  @media (--mediaTablet) {
+    width: 120%;
+  }
+  @media (--mediaMobile) {
+    height: 82%;
+    width: auto;
+    top: 70px;
+  }
+}
+
+.Arufabudo {
+  background-color: rgb(var(--rgbRed));
+}
+
+.Arufabudo .Text {
+  color: rgb(var(--rgbWhite));
+  max-width: 70%;
+  z-index: 1;
+}
+
+.Arufabudo .Logo {
+  width: 96px;
+  height: 100px;
+  z-index: 1;
+}
+
+.Arufabudo .Image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100%;
+  @media (max-width: $tablet) {
+    top: 50%;
+  }
+  @media (max-width: $phone) {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.Planifai {
+  background-color: rgb(var(--rgbGreen));
+}
+
+.Planifai .Text {
+  max-width: 70%;
+  color: rgb(var(--rgbDark));
+  z-index: 1;
+}
+
+.Planifai .Logo {
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.Planifai .Image {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: auto;
+  @media (--mmediaTablet) {
+    width: 180%;
+  }
+  @media (--mediaMobile) {
+    height: 110%;
+    width: auto;
+    top: 58%;
+  }
+}
+
+.Rapidcoder {
+  background-color: rgb(var(--rgbPurple));
+}
+
+.Rapidcoder .Text {
+  max-width: 70%;
+  color: rgb(var(--rgbWhite));
+  z-index: 1;
+}
+
+.Rapidcoder .Logo {
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.Rapidcoder .Image {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  width: 95%;
+  height: auto;
+  @media (--mediaTablet) {
+    bottom: 0;
+    top: auto;
+    width: 165%;
+    height: auto;
+  }
+  @media (--mediaMobile) {
+    height: 82%;
+    width: auto;
+    top: 70px;
+  }
+}
