@@ -8,7 +8,7 @@ import styles from './Intro.module.css';
 import { HoldingButton } from './HoldingButton';
 
 const DisplacementSphere = dynamic(() =>
-  import('pages/Home/DisplacementSphere').then(mod => mod.DisplacementSphere)
+  import('pages/home/DisplacementSphere').then(mod => mod.DisplacementSphere)
 );
 
 export function Intro({
