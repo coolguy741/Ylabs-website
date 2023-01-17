@@ -1,5 +1,5 @@
 import { Meta } from 'components/Meta';
-import { Intro } from 'pages/Home/Intro';
+import { Intro } from 'pages/home/Intro';
 import styles from './Home.module.css';
 import { useRouter } from 'next/router';
 import React from 'react';
