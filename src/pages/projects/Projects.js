@@ -1,7 +1,7 @@
 import { Meta } from 'components/Meta';
 import styles from './Projects.module.css';
 import { ProjectSlider } from 'components/ProjectSlider';
-import { slidesData } from './ProjectsData';
+import { slidesData } from './ProjectsData.js';
 
 export const Projects = () => {
   return (
