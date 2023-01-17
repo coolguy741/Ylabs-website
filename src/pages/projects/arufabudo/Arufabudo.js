@@ -1,5 +1,4 @@
 // import { Project } from 'components/Project';
-import styles from './Arufabudo.module.css';
 import { Project } from 'components/Project';
 
 const ArufabudoData = {
