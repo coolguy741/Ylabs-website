@@ -9,7 +9,7 @@ export const MileStones = ({ milestones }) => {
           <div className={styles.Events}>
             {milestones.map((milestone, key) => {
               return (
-                <div className={styles.Event} kye={key}>
+                <div className={styles.Event} key={key}>
                   <div className={`${styles.Date} deskTextRegular`}>{milestone.date}</div>
                   <div className={`${styles.Content} deskTitleSmall`}>
                     {milestone.title}

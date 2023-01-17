@@ -65,7 +65,6 @@ export function Intro({
                 <DecoderText text={description2} delay={1200} />
               </div>
             </header>
-            <Button>CLick@HOLD</Button>
           </Fragment>
         )}
       </Transition>
