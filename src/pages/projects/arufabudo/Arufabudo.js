@@ -33,24 +33,24 @@ const ArufabudoData = {
   },
   images: [
     {
-      image: '../../../../assets/images/arufabudo/arufabudo_boxing_gloves.jpg',
-      thumbImage: '../../../../assets/images/arufabudo/arufabudo_boxing_gloves.jpg',
+      image: '/images/arufabudo/arufabudo_boxing_gloves.jpg',
+      thumbImage: '/images/arufabudo/arufabudo_boxing_gloves.jpg',
     },
     {
-      image: '../../../../assets/images/arufabudo/arufabudo_instagram_teaser.jpeg',
-      thumbImage: '../../../../assets/images/arufabudo/arufabudo_instagram_teaser.jpeg',
+      image: '/images/arufabudo/arufabudo_instagram_teaser.jpeg',
+      thumbImage: '/images/arufabudo/arufabudo_instagram_teaser.jpeg',
     },
     {
-      image: '../../../../assets/images/arufabudo/arufabudo_instagram_teaser_2.jpeg',
-      thumbImage: '../../../../assets/images/arufabudo/arufabudo_instagram_teaser_2.jpeg',
+      image: '/images/arufabudo/arufabudo_instagram_teaser_2.jpeg',
+      thumbImage: '/images/arufabudo/arufabudo_instagram_teaser_2.jpeg',
     },
     {
-      image: '../../../../assets/images/arufabudo/arufabudo_boxingbag.jpeg',
-      thumbImage: '../../../../assets/images/arufabudo/arufabudo_boxingbag.jpeg',
+      image: '/images/arufabudo/arufabudo_boxingbag.jpeg',
+      thumbImage: '/images/arufabudo/arufabudo_boxingbag.jpeg',
     },
     {
-      image: '../../../../assets/images/arufabudo/arufabudo_stage_teaser.jpeg',
-      thumbImage: '../../../../assets/images/arufabudo/arufabudo_stage_teaser.jpeg',
+      image: '/images/arufabudo/arufabudo_stage_teaser.jpeg',
+      thumbImage: '/images/arufabudo/arufabudo_stage_teaser.jpeg',
     },
   ],
   milestones: [
