@@ -212,8 +212,8 @@ Showcase.prototype.onGrabStart = function () {
   });
   this.GLStickPop = parallel(progressSpring, directionSpring, waveIntensitySpring).start({
     update: values => {
-      if (this.progress !== values[0]) {
-      }
+      // if (this.progress !== values[0]) {
+      // }
       this.progress = values[0];
       this.direction = values[1];
       this.waveIntensity = values[2];

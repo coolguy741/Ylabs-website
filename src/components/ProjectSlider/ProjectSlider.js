@@ -37,8 +37,6 @@ export const ProjectSlider = ({ slidesData }) => {
     window.addEventListener('mousemove', function (ev) {
       showcase.onMouseMove(ev);
     });
-
-    console.log('Debug: useEffect');
   }, []);
 
   return <div className={styles.ProjectSlider} ref={ref} />;
