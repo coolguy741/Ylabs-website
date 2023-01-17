@@ -16,6 +16,7 @@ class Slides {
       const title = createEleWithClass('h1', styles.SlideTitle);
       const meta = createEleWithClass('p', styles.SlideMeta);
       const more = createEleWithClass('button', styles.SlideMore);
+      slide.setAttribute('key', index);
       slide.classList.add(index !== 0 ? styles.Next : styles.ShowMeta);
       meta.innerHTML = entry.meta;
       title.innerHTML = entry.title;

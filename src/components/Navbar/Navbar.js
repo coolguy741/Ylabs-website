@@ -10,7 +10,6 @@ import { useEffect, useRef, useState } from 'react';
 import { cssProps, media, msToNum, numToMs } from 'utils/style';
 import { NavToggle } from './NavToggle';
 import styles from './Navbar.module.css';
-import { ThemeToggle } from './ThemeToggle';
 import { navLinks, socialLinks } from './navData';
 
 export const Navbar = () => {
