@@ -174,9 +174,7 @@ a {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  @media (--mediaDesktop) {
-    width: 50vw;
-  }
+  width: 50vw !important;
 }
 
 .swiper-slide img {

@@ -99,5 +99,5 @@ const ArufabudoData = {
 };
 
 export const Arufabudo = () => {
-  return <Project arufabudoData={ArufabudoData} />;
+  return <Project data={ArufabudoData} />;
 };

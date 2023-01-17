@@ -6,7 +6,7 @@ export const RapidCoder = () => {
   return (
     <div className={styles.RapidCoder}>
       <Meta title="" description="Ylabs website" />
-      <div>RapidCoder</div>
+      <div>Editing now</div>
       <Footer />
     </div>
   );

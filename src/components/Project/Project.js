@@ -8,25 +8,21 @@ import { Contacts } from './Contacts';
 import { Services } from './Services';
 import { ProjectLinks } from './ProjectLinks';
 
-export const Project = ({ arufabudoData }) => {
-  console.log('Debug: arufabudoData', arufabudoData);
+export const Project = ({ data }) => {
   return (
     <div className={styles.Project}>
-      <HeaderImage
-        src={arufabudoData.headerImage.src}
-        alt={arufabudoData.headerImage.alt}
-      />
+      <HeaderImage src={data.headerImage.src} alt={data.headerImage.alt} />
       <About
-        logoUrl={arufabudoData.about.logoUrl}
-        title={arufabudoData.about.title}
-        description={arufabudoData.about.description}
-        cards={arufabudoData.about.cards}
+        logoUrl={data.about.logoUrl}
+        title={data.about.title}
+        description={data.about.description}
+        cards={data.about.cards}
       />
-      <ImageSlider images={arufabudoData.images} />
-      <Services services={arufabudoData.services} />
-      <MileStones milestones={arufabudoData.milestones} />
-      <LinkContainer website={arufabudoData.website} />
-      <ProjectLinks projectLinks={arufabudoData.projectLinks} />
+      <ImageSlider images={data.images} />
+      <Services services={data.services} />
+      <MileStones milestones={data.milestones} />
+      <LinkContainer website={data.website} />
+      <ProjectLinks projectLinks={data.projectLinks} />
       <Contacts />
     </div>
   );
